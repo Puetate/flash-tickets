@@ -10,6 +10,10 @@ class AccountTab extends StatefulWidget {
 class _AccountTabState extends State<AccountTab> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Container(
+      child: Center(
+        child: Text("Cuenta"),
+      ),
+    );
   }
 }

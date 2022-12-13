@@ -41,6 +41,7 @@ dependencies:
   fluentui_icons: ^1.0.0
   iconly: ^1.0.1
   dropdown_search: ^5.0.5
+  gap: ^2.0.1
 
 dev_dependencies:
   flutter_test:

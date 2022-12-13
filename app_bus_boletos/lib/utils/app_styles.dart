@@ -7,14 +7,23 @@ class Styles {
   static Color secondary = const Color.fromARGB(255, 232, 234, 246);
   static Color cardColor = const Color.fromARGB(255, 255, 255, 255);
   static Color orange = const Color.fromARGB(255, 255, 144, 65);
+  static Color orangeCardColor = const Color(0xFFF37B67);
+  static Color backCardColor = Color.fromARGB(255, 9, 32, 66);
+
   static Color textButtonColor = const Color.fromARGB(255, 161, 182, 255);
   static TextStyle textStyleTitle = TextStyle(
     fontSize: 30,
     fontWeight: FontWeight.w600,
     color: primaryColor,
   );
-  static TextStyle textStyleSubTitle = TextStyle(
-    fontSize: 18,
+  static TextStyle textStyleSubTitle3 = TextStyle(
+    fontSize: 17,
+    fontWeight: FontWeight.bold,
+    color: cardColor,
+  );
+
+  static TextStyle textStyleSubTitle2 = TextStyle(
+    fontSize: 12,
     fontWeight: FontWeight.bold,
     color: cardColor,
   );

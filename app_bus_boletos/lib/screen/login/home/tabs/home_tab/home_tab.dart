@@ -131,6 +131,9 @@ class _HometabState extends State<Hometab> {
                                         "Guaranda",
                                         "Esmeraldas"
                                       ],
+                                      onSaved: (newValue) {
+                                        print(newValue);
+                                      },
                                       dropdownDecoratorProps:
                                           const DropDownDecoratorProps(
                                         dropdownSearchDecoration:
@@ -166,7 +169,7 @@ class _HometabState extends State<Hometab> {
                 children: [
                   Text(
                     "Proximo Viaje",
-                    style: Styles.textStyleSubTitle,
+                    style: Styles.textStyleSubTitle3,
                   ),
                   TextButton(
                     onPressed: () {
@@ -189,7 +192,15 @@ class _HometabState extends State<Hometab> {
               ),
             ),
           ),
-          Transform.translate(offset: Offset(0, -40), child: TicketView()),
+          Transform.translate(
+              offset: Offset(0, -40),
+              child: SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                padding: EdgeInsets.only(left: 20),
+                child: Row(
+                  children: [TicketView(), TicketView()],
+                ),
+              )),
         ],
       ),
     );
