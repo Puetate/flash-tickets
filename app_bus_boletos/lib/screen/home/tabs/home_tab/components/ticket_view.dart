@@ -1,4 +1,4 @@
-import 'package:app_bus_boletos/screen/login/home/tabs/home_tab/components/thick_container.dart';
+import 'package:app_bus_boletos/screen/home/tabs/home_tab/components/thick_container.dart';
 import 'package:app_bus_boletos/utils/app_layout.dart';
 import 'package:app_bus_boletos/utils/app_styles.dart';
 import 'package:flutter/material.dart';
@@ -23,8 +23,8 @@ class TicketView extends StatelessWidget {
               Parte azul del card/ticket
                */
               Container(
-                decoration: const BoxDecoration(
-                    color: Color.fromARGB(255, 32, 45, 54),
+                decoration: BoxDecoration(
+                    color: Styles.cardColorTicket,
                     borderRadius: BorderRadius.only(
                         topLeft: Radius.circular(21),
                         topRight: Radius.circular(21))),
@@ -35,7 +35,8 @@ class TicketView extends StatelessWidget {
                       children: [
                         Text(
                           "Ambato",
-                          style: Styles.textStyleSubTitle3,
+                          style: Styles.textStyleSubTitle3
+                              .copyWith(color: Styles.textCardColor),
                         ),
                         const Spacer(),
                         ThickContainer(),
@@ -70,10 +71,13 @@ class TicketView extends StatelessWidget {
                                 },
                               ),
                             ),
+                            //TODO:***************************************************************************************
+                            //ICONO
                             Center(
                                 child: Icon(
+                              size: 30,
                               Icons.directions_bus_filled_outlined,
-                              color: Colors.white,
+                              color: Styles.textCardColor,
                             )),
                           ],
                         )),
@@ -81,7 +85,8 @@ class TicketView extends StatelessWidget {
                         const Spacer(),
                         Text(
                           "Quito",
-                          style: Styles.textStyleSubTitle3,
+                          style: Styles.textStyleSubTitle3
+                              .copyWith(color: Styles.textCardColor),
                         ),
                       ],
                     ),
@@ -93,19 +98,22 @@ class TicketView extends StatelessWidget {
                           width: 120,
                           child: Text(
                             "T. Ingaurco",
-                            style: Styles.textStyleSubTitle2,
+                            style: Styles.textStyleSubTitle2
+                                .copyWith(color: Styles.textCardColor),
                           ),
                         ),
                         Text(
                           "3H 30M",
-                          style: Styles.textStyleSubTitle2,
+                          style: Styles.textStyleSubTitle2
+                              .copyWith(color: Styles.textCardColor),
                         ),
                         SizedBox(
                           width: 100,
                           child: Text(
                             "T. Ibarra",
                             textAlign: TextAlign.end,
-                            style: Styles.textStyleSubTitle2,
+                            style: Styles.textStyleSubTitle2
+                                .copyWith(color: Styles.textCardColor),
                           ),
                         ),
                       ],
@@ -119,8 +127,7 @@ class TicketView extends StatelessWidget {
                */
 
               Container(
-                color:
-                    Color.fromARGB(255, 32, 45, 54), //const Color(0xFFF37B67),
+                color: Styles.cardColorTicket, //const Color(0xFFF37B67),
                 child: Row(
                   children: [
                     SizedBox(
@@ -148,12 +155,12 @@ class TicketView extends StatelessWidget {
                             mainAxisSize: MainAxisSize.max,
                             children: List.generate(
                                 (constraints.constrainWidth() / 15).floor(),
-                                (index) => const SizedBox(
+                                (index) => SizedBox(
                                       width: 5,
                                       height: 1,
                                       child: DecoratedBox(
                                           decoration: BoxDecoration(
-                                              color: Colors.white)),
+                                              color: Styles.textCardColor)),
                                     )),
                           );
                         },
@@ -181,7 +188,7 @@ class TicketView extends StatelessWidget {
                */
               Container(
                 decoration: BoxDecoration(
-                  color: Color.fromARGB(255, 32, 45, 54),
+                  color: Styles.cardColorTicket,
                   borderRadius: const BorderRadius.only(
                       bottomLeft: Radius.circular(21),
                       bottomRight: Radius.circular(21)),
@@ -200,19 +207,22 @@ class TicketView extends StatelessWidget {
                               children: [
                                 Text(
                                   "1 May",
-                                  style: Styles.textStyleSubTitle2,
+                                  style: Styles.textStyleSubTitle2
+                                      .copyWith(color: Styles.textCardColor),
                                 ),
                                 const Gap(5),
                                 Text(
                                   "08:00 AM",
-                                  style: Styles.textStyleSubTitle2,
+                                  style: Styles.textStyleSubTitle2
+                                      .copyWith(color: Styles.textCardColor),
                                 )
                               ],
                             ),
                             const Gap(2),
                             Text(
                               "Partida",
-                              style: Styles.textStyleSubTitle2,
+                              style: Styles.textStyleSubTitle2
+                                  .copyWith(color: Styles.textCardColor),
                             )
                           ],
                         ),
@@ -225,36 +235,42 @@ class TicketView extends StatelessWidget {
                                 Icon(
                                   size: 20,
                                   Icons.chair_outlined,
-                                  color: Colors.white,
+                                  color: Styles.textCardColor,
                                 ),
-                                Gap(15),
+                                const Gap(15),
                                 Text(
                                   "VIP ",
-                                  style: Styles.textStyleSubTitle2,
+                                  style: Styles.textStyleSubTitle2
+                                      .copyWith(color: Styles.textCardColor),
                                 ),
                                 Text(
                                   "1,2",
-                                  style: Styles.textStyleSubTitle2,
+                                  style: Styles.textStyleSubTitle2
+                                      .copyWith(color: Styles.textCardColor),
                                 ),
-                                Gap(7),
+                                const Gap(7),
                                 Text(
                                   "~",
-                                  style: Styles.textStyleSubTitle2,
+                                  style: Styles.textStyleSubTitle2
+                                      .copyWith(color: Styles.textCardColor),
                                 ),
                                 Gap(7),
                                 Text(
                                   "NORM ",
-                                  style: Styles.textStyleSubTitle2,
+                                  style: Styles.textStyleSubTitle2
+                                      .copyWith(color: Styles.textCardColor),
                                 ),
                                 Text(
                                   "1,2",
-                                  style: Styles.textStyleSubTitle2,
+                                  style: Styles.textStyleSubTitle2
+                                      .copyWith(color: Styles.textCardColor),
                                 ),
                               ],
                             ),
                             Text(
                               "Asiento(s)",
-                              style: Styles.textStyleSubTitle2,
+                              style: Styles.textStyleSubTitle2
+                                  .copyWith(color: Styles.textCardColor),
                             )
                           ],
                         )

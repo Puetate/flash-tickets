@@ -1,4 +1,4 @@
-import 'package:app_bus_boletos/screen/login/home/bottom_bar.dart';
+import 'package:app_bus_boletos/screen/home/bottom_bar.dart';
 import 'package:app_bus_boletos/screen/login/login_page.dart';
 import 'package:app_bus_boletos/utils/app_styles.dart';
 import 'package:flutter/material.dart';
@@ -34,7 +34,11 @@ class MyApp extends StatelessWidget {
         return MaterialPageRoute(builder: (BuildContext context) {
           switch (settings.name) {
             case "/":
+              return LoginPage();
+            case "/homePage":
               return Home();
+            case "/loginPage":
+              return LoginPage();
             default:
               return Home();
           }

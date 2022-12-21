@@ -1,4 +1,4 @@
-import 'package:app_bus_boletos/screen/login/home/tabs/home_tab/components/ticket_view.dart';
+import 'package:app_bus_boletos/screen/home/tabs/home_tab/components/ticket_view.dart';
 import 'package:app_bus_boletos/utils/app_styles.dart';
 import 'package:dropdown_search/dropdown_search.dart';
 import 'package:flutter/material.dart';
@@ -97,6 +97,7 @@ class _HometabState extends State<Hometab> {
               ],
             ),
           ),
+          //todo:DROPDOWN SEARCH
           Transform.translate(
             offset: Offset(0, -40),
             child: Column(
@@ -131,7 +132,7 @@ class _HometabState extends State<Hometab> {
                                         "Guaranda",
                                         "Esmeraldas"
                                       ],
-                                      onSaved: (newValue) {
+                                      onChanged: (newValue) {
                                         print(newValue);
                                       },
                                       dropdownDecoratorProps:

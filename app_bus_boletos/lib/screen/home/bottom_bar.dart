@@ -1,7 +1,7 @@
-import 'package:app_bus_boletos/screen/login/home/tabs/account_tab/account_tab.dart';
-import 'package:app_bus_boletos/screen/login/home/tabs/home_tab/home_tab.dart';
-import 'package:app_bus_boletos/screen/login/home/tabs/search_tab/search_tab.dart';
-import 'package:app_bus_boletos/screen/login/home/tabs/wallet_tab/wallet_tab.dart';
+import 'package:app_bus_boletos/screen/home/tabs/account_tab/account_tab.dart';
+import 'package:app_bus_boletos/screen/home/tabs/home_tab/home_tab.dart';
+import 'package:app_bus_boletos/screen/home/tabs/search_tab/search_tab.dart';
+import 'package:app_bus_boletos/screen/home/tabs/wallet_tab/wallet_tab.dart';
 import 'package:app_bus_boletos/utils/app_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
