@@ -38,7 +38,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   google_nav_bar: ^5.0.6
   iconsax: ^0.0.8
-  fluentui_icons: ^1.0.0
+  fluentui_icons: ^1.0.0                                                                                                                                                                                                  
   iconly: ^1.0.1
   dropdown_search: ^5.0.5
   gap: ^2.0.1
